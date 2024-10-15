@@ -13,9 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       backgroundImage: {
-        'mobile': "url('./components/construction-sm.jpg')",
-        'desktop': "url('./components/construction.jpg')",
-      }
+        mobile: "url('./components/construction-sm.jpg')",
+        desktop: "url('./components/construction.jpg')",
+      },
     },
   },
   plugins: [],

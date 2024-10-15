@@ -4,10 +4,10 @@ import Services from "@/app/components/services";
 
 export default function Home() {
   return (
-      <>
-        <Header />
-        <Hero />
-        <Services />
-      </>
+    <>
+      <Header />
+      <Hero />
+      <Services />
+    </>
   );
 }
