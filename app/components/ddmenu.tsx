@@ -29,7 +29,7 @@ export default function DropDown() {
       </div>
       <div
         className={clsx({
-          "hidden": isClicked === false,
+          hidden: isClicked === false,
           "block shadow-md bg-slate-200 fixed right-4 p-4 rounded-md":
             isClicked === true,
         })}

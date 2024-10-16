@@ -7,7 +7,7 @@ export default function Header() {
       <div className={`${oswald.className} text-2xl font-extrabold text-black`}>
         COFLETX
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:block dark:text-black">
         <ul className="flex gap-4 items-center">
           <li>Projects</li>
           <li>About</li>
