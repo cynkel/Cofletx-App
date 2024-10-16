@@ -3,8 +3,8 @@ import { inter } from "./fonts";
 
 export default function Hero() {
   return (
-    <div className="md:flex md:flex-col md:items-center mx-4 mt-4 relative md:mt-20">
-      <div>
+    <div className="md:flex md:flex-col md:items-center mx-2 mt-4 relative md:mt-20 md:max-h-[512px]">
+      <div className="max-h-full">
         <Image
           src="/construction-sm.jpg"
           width={600}

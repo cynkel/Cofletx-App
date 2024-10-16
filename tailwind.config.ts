@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        dark_gray: "#4B5563",
+        light_gray: "#9CA3AF",
+        mint_green: "#B2F2BB",
+        lemon_chiffon: "#FFFACD",
       },
       backgroundImage: {
         mobile: "url('./components/construction-sm.jpg')",
