@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="min-w-screen shadow-md bg-white flex items-center justify-center flex-col p-2 h-72 mt-4">
+    <div className="min-w-screen shadow-md bg-black flex items-center justify-center flex-col p-2 h-72 mt-4">
       <h1 className="text-4xl text-yellow-400 font-extrabold text-center">
         Get in touch with us today
       </h1>
@@ -40,7 +40,7 @@ export default function Footer() {
           +2330000000000
         </p>
       </div>
-      <button className="shadow-md bg-yellow-400 text-black p-2 rounded-md font-bold">
+      <button className="shadow-md bg-golden_yellow text-black p-2 rounded-md font-bold">
         Contact Us
       </button>
     </div>

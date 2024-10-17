@@ -6,7 +6,7 @@ import Footer from "@/app/components/footer";
 
 export default function Home() {
   return (
-    <main className="dark: text-black">
+    <main className="dark:text-black ">
       <Header />
       <Hero />
       <Services />

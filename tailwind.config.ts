@@ -15,6 +15,7 @@ const config: Config = {
         light_gray: "#9CA3AF",
         mint_green: "#B2F2BB",
         lemon_chiffon: "#FFFACD",
+        golden_yellow: "#F1C40F",
       },
       backgroundImage: {
         mobile: "url('./components/construction-sm.jpg')",

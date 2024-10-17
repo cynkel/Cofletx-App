@@ -6,7 +6,7 @@ export default function Card({
   subtitle: string;
 }) {
   return (
-    <div className="bg-gradient-to-br from-dark_gray to-light_gray border rounded-lg bg-gray-300 w-full h-28 p-3 text-white md:w-38 md:max-w-56 md:min-h-56 shadow-lg">
+    <div className="bg-transparent border border-black dark:border-white rounded-lg bg-gray-300 w-full h-28 p-3 text-black md:w-36 md:h-44">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,8 @@ export default function Card({
           />
         </svg>
       </div>
-      <p className="font-bold text-white">{product_title}</p>
-      <p className="text-xs font-extralight text-white">{subtitle}</p>
+      <p className="font-bold text-black dark:text-white">{product_title}</p>
+      <p className="text-xs font-extralight text-black dark:text-white">{subtitle}</p>
     </div>
   );
 }
