@@ -1,17 +1,16 @@
 import Header from "@/app/components/header";
 import Hero from "@/app/components/hero";
 import Services from "@/app/components/services";
-import FAQ from "@/app/components/faq";
-import Footer from "@/app/components/footer";
+import FAQ from "@/app/components/faq"; 
+import Card from "./components/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="dark:text-black ">
+    <main>
       <Header />
       <Hero />
       <Services />
-      <FAQ />
-      <Footer />
     </main>
   );
 }

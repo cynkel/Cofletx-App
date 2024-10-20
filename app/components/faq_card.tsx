@@ -2,16 +2,16 @@
 import { useState } from "react";
 import clsx from "clsx";
 
-export default function FCard() {
+export default function FCard({question, answer}: {question: string, answer: string}) {
   const [clicked, setClicked] = useState(false);
   const drop = () => {
     setClicked((prev) => !prev);
   };
   return (
-    <div onClick={() => drop()}>
-      <div className="bg-black rounded-md max-h-24 p-4 shadow-md flex items-center justify-between">
+    <div className="rounded-md">
+      <div onClick={() => drop()} className="transition ease-in-out bg-black rounded-md hover:cursor-pointer max-h-24 p-4 shadow-md flex items-center justify-between hover:translate-y-0.5 hover:scale-105 dark:border-white duration-500">
         <p className="text-lg text-white">
-          Lorem ipsum dolor sit amet, consectetur
+          {question}
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,15 +30,12 @@ export default function FCard() {
       </div>
       <div
         className={clsx({
-          hidden: clicked === false,
-          "block bg-black rounded-md": clicked === true,
+          "animate-fade_out hidden": clicked === false,
+          "animate-fade_in bg-zinc-900 rounded-md p-4 mt-1 dark:mt-0": clicked === true,
         })}
       >
-        <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed ipsa
-          maiores dolore assumenda fugiat provident ad, libero consequuntur
-          nesciunt dolor fugit a est eius officia. Praesentium sunt neque
-          incidunt?
+        <p className="text-gray-300 font-extralight text-sm">
+          {answer}
         </p>
       </div>
     </div>

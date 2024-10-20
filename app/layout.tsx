@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cofletx",
+  title: "Cofletx | Innovative Construction & Architectural Solutions for Your Dream Projects",
   description: "Professional construction and building services, specializing in residential and commercial projects. Skilled craftsmanship, innovative design, and reliable, tailored solutions for all your construction needs. Contact us for expert construction services.",
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-full dark:bg-zinc-950`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-zinc-950 text-slate-900 bg-white dark:text-white`}
       >
         {children}
       </body>

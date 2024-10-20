@@ -1,33 +1,19 @@
-import Image from "next/image";
-import { inter } from "./fonts";
+import { montserrat, roboto_bold, roboto } from "./fonts";
 
 export default function Hero() {
   return (
-    <div className="md:flex md:flex-col md:items-center mx-2 mt-4 relative md:mt-20 md:max-h-[512px]">
-      <div className="max-h-full">
-        <Image
-          src="/construction-sm.jpg"
-          width={600}
-          height={512}
-          alt=""
-          className="md:hidden rounded-lg"
-        />
-        <Image
-          src="/construction.jpg"
-          width={896}
-          height={512}
-          alt=""
-          className="hidden md:block rounded-lg"
-        />
-        <div className="md:relative md:w-full md:bottom-14">
-          <h1
-            className={`${inter.className} text-2xl absolute bottom-28 left-8 font-bold text-white md:text-4xl md:bottom-36 md:mb-8`}
-          >
-            Leading Experts in Building Design and Architecture
-          </h1>
-          <button className="shadow-md bg-yellow-400 text-black absolute bottom-4 p-2 rounded-md font-bold right-6 left-6 md:relative md:bottom-16 md:ml-2">
-            Contact Us
-          </button>
+    <div className="w-full p-3 bg-mobile bg-cover h-96 md:bg-none md:flex md:justify-center lg:h-[30rem]">
+      <div className="w-full h-full bg-cover md:bg-tablet md:rounded-lg md:p-4 lg:w-[64rem] 2xl:w-[120rem] lg:bg-large">
+        <div className="flex flex-col h-full justify-around md:justify-around">
+          <div>
+          <h1 className={`${montserrat.className} text-2xl text-left font-bold text-white md:text-4xl`}>Leading Experts in Building Construction and Architecture</h1>
+          <p className={`${roboto.className} text-black font-thin md:text-sm`}>
+          At Cofletx, we merge innovative design with architectural expertise to bring your vision to life. 
+          Our dedicated team is committed to crafting sustainable and functional spaces that stand the test
+          of time. Join us in shaping the future of architecture, one exceptional design at a time.
+          </p>
+          </div>
+            <button className={`${roboto_bold.className} transform ease-in-out duration-300 hover:bg-purple-950 hover:text-yellow-400 hover:scale-105 antialiased rounded-lg bg-yellow-400 shadow-lg w-full p-2 text-purple-950 text-2xl md:w-64`}>Contact Us</button>
         </div>
       </div>
     </div>
