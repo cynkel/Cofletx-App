@@ -21,30 +21,30 @@ const config: Config = {
         mobile: "url('./components/construction-sm.jpg')",
         tablet: "url('./components/construction-t.jpg')",
         desktop: "url('./components/construction.jpg')",
-        large: "url('./components/cranes.jpg')"
+        large: "url('./components/cranes.jpg')",
       },
       keyframes: {
         fade_in: {
-          '0%': {
-            opacity: '0'
+          "0%": {
+            opacity: "0",
           },
-          '100%': {
-            opacity: '100'
-          }
+          "100%": {
+            opacity: "100",
+          },
         },
         fade_out: {
-          '0%': {
-            opacity: '100'
+          "0%": {
+            opacity: "100",
           },
-          '100%': {
-            opacity: '0'
-          }
+          "100%": {
+            opacity: "0",
+          },
         },
       },
       animation: {
-        fade_in: 'fade_in 1s ease-in-out 1',
-        fade_out: 'fade_out 1s ease-in-out 1 ',
-      }
+        fade_in: "fade_in 1s ease-in-out 1",
+        fade_out: "fade_out 1s ease-in-out 1 ",
+      },
     },
   },
   plugins: [],

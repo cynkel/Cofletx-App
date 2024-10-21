@@ -1,7 +1,8 @@
 export default function Recent() {
-    return (
-        <div>
-            <h3>Recent Projects</h3>
-        </div>
-    );
+  return (
+    <div>
+      <h3>Recent Projects</h3>
+      <div></div>
+    </div>
+  );
 }

@@ -1,7 +1,3 @@
 export default function RCard() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div></div>;
 }

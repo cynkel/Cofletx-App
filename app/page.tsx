@@ -1,13 +1,13 @@
-import Header from "@/app/components/header";
 import Hero from "@/app/components/hero";
 import Services from "@/app/components/services";
+import FAQ from "./components/faq";
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <Hero />
       <Services />
+      <FAQ />
     </main>
   );
 }
