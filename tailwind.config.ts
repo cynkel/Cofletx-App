@@ -18,10 +18,10 @@ const config: Config = {
         golden_yellow: "#F1C40F",
       },
       backgroundImage: {
-        mobile: "url('./components/construction-sm.jpg')",
-        tablet: "url('./components/construction-t.jpg')",
-        desktop: "url('./components/construction.jpg')",
-        large: "url('./components/cranes.jpg')",
+        mobile: "url('./components/construction-sm.webp')",
+        tablet: "url('./components/construction-t.webp')",
+        desktop: "url('./components/construction.webp')",
+        large: "url('./components/cranes.webp')",
       },
       keyframes: {
         fade_in: {
