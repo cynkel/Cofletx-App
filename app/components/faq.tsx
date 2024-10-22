@@ -3,7 +3,9 @@ import FCard from "./faq_card";
 export default function FAQ() {
   return (
     <div className="text-2xl px-3 xl:px-48 md:px-20 2xl:px-80 dark:text-white">
-      <h1 className="md:text-left text-center font-bold mb-2">Frequently Asked Questions</h1>
+      <h1 className="md:text-left text-center font-bold mb-2">
+        Frequently Asked Questions
+      </h1>
       <div className="flex flex-col gap-2">
         <FCard
           question="What services does Cofletx offer?"

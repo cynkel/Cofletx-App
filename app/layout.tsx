@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/header";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { public_sans } from "./components/fonts";
+import { Button } from "./components/buttons";
 
 export const metadata: Metadata = {
   title:
@@ -28,10 +17,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-zinc-950 text-slate-900 bg-white dark:text-white 2xl:px-64`}
-      >
-        <Header />
+      <body className={`${public_sans.className} antialiased`}>
+        <header className="fixed w-full top-0 bg-transparent backdrop-blur-sm flex justify-between items-center px-6 py-4 shadow-lg">
+          <h1 className={`${public_sans.className} text-yellow font-extrabold text-3xl`}>Cofletx</h1>
+          <ul className="hidden lg:flex lg:gap-4 lg:text-white lg:font-extralight">
+            <li>About Us</li>
+            <li>Our Services</li>
+            <li>Projects</li>
+            <li>Contact Us</li>
+          </ul>
+          <div className="flex items-center gap-4">
+            <Button text="Contact Us" paddings="py-1 px-1"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.8}
+              stroke="currentColor"
+              className="size-9 stroke-yellow lg:hidden"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </header>
         {children}
       </body>
     </html>

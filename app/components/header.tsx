@@ -1,26 +1,27 @@
 import Menu from "@/app/components/ddmenu";
-import { oswald } from "./fonts";
 import Image from "next/image";
-import { roboto } from "./fonts";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className="flex justify-between w-full shadow backdrop-blur-md p-2 items-center sticky z-10 top-0 dark:text-white">
-      <div
-        className={`${oswald.className} text-2xl font-extrabold text-black dark:text-white flex gap-2 items-center`}
-      >
-        <Image
-          src="/cofletx.png"
-          width={32}
-          height={32}
-          alt=""
-          className="mt-1.5"
-        />
-        COFLETX
-      </div>
+      <Link href="/">
+        <div className="text-2xl font-extrabold text-purple-950 dark:text-white flex gap-2 items-center">
+          <Image
+            src="/cofletx.png"
+            width={32}
+            height={32}
+            alt=""
+            className="mt-1.5 text-2xl"
+          />
+          COFLETX
+        </div>
+      </Link>
       <div className="hidden md:block dark:text-white">
-        <ul className={`${roboto.className} flex gap-4 items-center`}>
-          <li>Home</li>
+        <ul className="flex gap-4 items-center">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
           <li>Services</li>
           <li>Projects</li>
           <li>About</li>
