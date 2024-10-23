@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${public_sans.className} antialiased`}>
-        <header className="fixed w-full top-0 bg-transparent backdrop-blur-sm flex justify-between items-center px-6 py-4 shadow-lg">
+        <header className="fixed w-full bg-purple-800 top-0 flex justify-between items-center px-6 py-4 shadow-lg">
           <h1 className={`${public_sans.className} text-yellow font-extrabold text-3xl`}>Cofletx</h1>
           <ul className="hidden lg:flex lg:gap-4 lg:text-white lg:font-extralight">
             <li>About Us</li>
