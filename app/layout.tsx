@@ -32,7 +32,7 @@ export default function RootLayout({
                 alt="Company Logo"
               />
               <h1
-                className={`${public_sans.className} font-extrabold text-xl md:text-3xl text-yellow`}
+                className={`${public_sans.className} font-extrabold text-xl lg:text-3xl text-yellow`}
               >
                 Cofletx
               </h1>
@@ -46,7 +46,7 @@ export default function RootLayout({
             </ul>
           </div>
 
-          <div className="flex items-center gap-2 md:gap-4">
+          <div className="flex items-center gap-2 lg:gap-4">
             <Link href="/contact">
             <button className="px-2 py-1 md:p-2 md:px-3 bg-yellow rounded transform duration-500 hover:scale-105 hover:bg-dark_purple hover:text-white">
               Contact Us
