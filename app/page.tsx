@@ -1,55 +1,36 @@
-import Image from "next/image";
-import { Button, Acc_Button } from "./components/buttons";
+import Hero from "./components/hero";
+import FAQ from "./components/faq";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mt-16 lg:mt-0">
-      <section className="w-full bg-gradient-to-r from-purple-700 via-purple-800 to-purple-950 grid grid-rows-hero lg:grid-cols-2 lg:grid-rows-1 lg:h-screen">
-        <div className="py-16 px-8 flex flex-col gap-6 justify-center">
-          <h2 className="font-extrabold text-white text-4xl 2xl:text-8xl">Leading Experts in Innovative Building Solutions</h2>
-          <p className="text-white font-light text-left 2xl:text-4xl">
-          Transforming visions into reality, we specialize in modern
-          architecture and sustainable construction practices. 
-          Partner with us for exceptional design, quality craftsmanship, 
-          and a commitment to excellence that elevates every project.
-          </p>
-          <div className="flex gap-6">
-            <Button text="About Us" paddings="px-4 py-2"/>
-            <Acc_Button text="Reach Out" paddings="px-4 py-2" />
-          </div>
+    <main className="flex flex-col gap-16">
+      <Hero />
+      <section className="w-full">
+        <h2 className="px-8 lg:px-12 py-2 mb-6 font-bold text-2xl">About Us</h2>
+        <p className="px-8 lg:px-12 text-left">
+        With over 20 years of experience, Cofletx has established itself 
+        as a leading expert in building design and architecture. 
+        Our dedicated team of professionals delivers innovative, 
+        high-quality solutions tailored to meet the unique needs of each client. 
+        From concept to completion, we pride ourselves on turning visions into reality, 
+        ensuring precision, sustainability, and excellence in every project we undertake.
+        <Link href="/about"><span className="text-dark_purple font-bold"> Click here to learn more...</span></Link>
+        </p>
+      </section>
+      <section className="w-full grid px-8 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4">
+        <div className="w-full rounded bg-texture bg-cover p-16 flex justify-center items-center">
+          <p className="text-center font-bold">Architectural<br />Drawings</p>
         </div>
-        <div>
-          <Image src="/cranes.webp" alt="" width={1920} height={1280} className="w-full hidden lg:block h-full"/>
-          <Image src="/cranes-tablet.webp" alt="" width={1280} height={800} className="lg:hidden w-full h-full" />
+        <div className="w-full rounded bg-residential bg-cover flex justify-center items-center">
+          <p className="text-center font-bold text-white">Residential</p>
+        </div>
+        <div className="w-full rounded bg-industrial bg-cover flex justify-center items-center">
+          <p className="text-center font-bold text-white">Industrial</p>
         </div>
       </section>
-      <section className="w-full bg-gradient-to-r from-purple-400 to-bg-purple-50 bg-cover">
-        <div className="p-16 grid grid-rows-hero lg:flex lg:flex-row-reverse lg:bg-texture bg-cover gap-8">
-          <div className="flex flex-col gap-6 justify-center text-white">
-            <h3 className="text-5xl font-bold">About Cofletx</h3>
-            <p className="text-black">At Cofletx, we specialize in delivering top-notch building and construction services, 
-              combined with precise architectural drawings. Our commitment to quality and innovation 
-              ensures that your vision becomes a reality.
-            </p>
-            <div className="flex gap-6 text-black">
-              <Button text="Give Us A call" paddings="py-2 px-2"/>
-              <Acc_Button text="Learn More" paddings="px-4 py-2" />
-            </div>
-          </div>
-          <div>
-            <Image src="/logo.webp" alt="" width={600} height={849}/>
-          </div>
-        </div>
-      </section>
-      <div className="flex flex-col p-4 w-full gap-4 md:gap-8">
-          <p className="text-center font-bold">Trusted by industry leaders</p>
-          <ul className="w-full flex items-center justify-center gap-8 px-4 md:gap-16 h-12 md:h-14">
-            <li><Image src="/top_oil.webp" alt="" width={100} height={150}/></li>
-            <li><Image src="/moh-logo-2.webp" alt="" width={100} height={150}/></li>
-            <li><Image src="/gat.webp" alt="" width={100} height={100}/></li>
-            <li><Image src="/kay_and_partners_logo.webp" alt="" width={100} height={150}/></li>
-          </ul>
-        </div>
+      <FAQ />
+      <div className="mb-20"></div>
     </main>
   );
 }

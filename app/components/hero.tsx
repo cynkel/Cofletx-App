@@ -1,22 +1,46 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <div className="w-full pt-4 px-4 bg-mobile bg-cover h-96 md:bg-none md:flex md:justify-center lg:h-[30rem] md:mt-5">
-      <div className="w-full h-full bg-cover md:bg-tablet md:rounded-lg md:px-14 lg:w-[64rem] 2xl:w-[120rem] lg:bg-large">
-        <div className="flex flex-col h-full justify-around md:justify-end gap-14">
-          <div>
-            <h1 className="text-2xl text-left font-extrabold md:text-purple-950 md:text-5xl">
-              Leading Experts in Building Construction and Architecture
-            </h1>
-            <p className="text-white font-thin md:text-sm md:w-3/6 md:text-left">
-              Join us in shaping the future of architecture, one exceptional
-              design at a time.
-            </p>
-          </div>
-          <button className="transform ease-in-out duration-300 hover:bg-purple-950 hover:text-yellow-400 hover:scale-105 antialiased rounded-lg bg-yellow-400 shadow-lg w-full p-2 text-purple-950 text-2xl md:w-64 md:mb-8">
+    <section className="flex items-center justify-center bg-hero bg-cover h-svh w-full">
+      <div className="flex flex-col items-center gap-4 justify-center h-full w-full bg-black bg-opacity-80 tracking-wide leading-loose">
+        <h1 className="font-bold text-2xl md:text-5xl text-white text-center w-2/3">
+          <span className="text-yellow">Leading Experts</span> in innovative
+          building design <span className="text-purple-900">and</span> project
+          management
+        </h1>
+        <p className="w-2/3 text-center text-lg text-white">
+          Innovative solutions in architectural design and construction
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <Link href="/contact">
+          <button className="transform duration-500 hover:scale-105 bg-yellow py-2 px-4 rounded hover:bg-purple-950 hover:text-white shadow-lg">
             Contact Us
           </button>
+          </Link>
+          <Link href="/projects">
+          <button className="transform duration-500 hover:scale-105 py-2 px-4 rounded text-white border hover:bg-purple-950 shadow-lg">
+            Explore Our Work
+          </button>
+          </Link>
+        </div>
+        <div className="text-center flex flex-col items-center absolute bottom-24 lg:bottom-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-12 md:size-24 lg:size-16 stroke-white animate-bounce"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -17,19 +17,17 @@ const config: Config = {
         lemon_chiffon: "#FFFACD",
         golden_yellow: "#F1C40F",
         yellow: "#FFD700",
-        dark_purple: "#4B0082"
+        dark_purple: "#4B0082",
       },
       gridTemplateRows: {
-        "hero": "1fr auto"
+        hero: "1fr auto",
       },
-      /*backgroundImage: {
-        mobile: "url('./components/construction-sm.webp')",
-        tablet: "url('./components/construction-t.webp')",
-        desktop: "url('./components/construction.webp')",
-        large: "url('./components/cranes.webp')",
-      },*/
+
       backgroundImage: {
-        texture: "url('./components/bg.webp')"
+        texture: "url('./components/bg.webp')",
+        hero: "url('./components/hero.webp')",
+        residential: "url('./components/residential.webp')",
+        industrial: "url('./components/industrial.webp')",
       },
       keyframes: {
         fade_in: {
@@ -52,6 +50,12 @@ const config: Config = {
       animation: {
         fade_in: "fade_in 1s ease-in-out 1",
         fade_out: "fade_out 1s ease-in-out 1 ",
+      },
+      backgroundSize: {
+        down: "2px 100%"
+      },
+      backgroundPosition: {
+        under: "0 100%"
       },
     },
   },

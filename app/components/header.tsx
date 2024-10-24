@@ -1,10 +1,9 @@
-import Menu from "@/app/components/ddmenu";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex justify-between w-full shadow backdrop-blur-md p-2 items-center sticky z-10 top-0 dark:text-white">
+    <div className="flex justify-between w-full shadow backdrop-blur-md p-2 items-center sticky top-0 dark:text-white">
       <Link href="/">
         <div className="text-2xl font-extrabold text-purple-950 dark:text-white flex gap-2 items-center">
           <Image
@@ -32,7 +31,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-      <Menu />
     </div>
   );
 }
