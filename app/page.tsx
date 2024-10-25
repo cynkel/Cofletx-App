@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-16 mt-24">
+    <main className="flex flex-col gap-16 md:mt-24">
       <div className="w-full h-screen relative">
         <Image src="/hero.webp" alt="" className="w-full h-full" width={1024} height={1024}/>
       </div>

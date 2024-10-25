@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${public_sans.className} antialiased h-screen`}>
-        <header className="w-full fixed top-0 z-10 bg-black bg-opacity-80 flex justify-between items-center px-6 py-4 border border-b-white border-x-0 border-t-0">
+        <header className="w-full md:fixed top-0 z-10 bg-black bg-opacity-80 flex justify-between items-center px-6 py-4 border border-b-white border-x-0 border-t-0">
           <div className="flex items-center gap-6 tracking-wide">
             <Link href="/">
             <div className="flex items-center gap-2">
