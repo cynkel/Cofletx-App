@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${public_sans.className} antialiased h-screen`}>
-        <header className="w-full bg-transparent absolute flex justify-between items-center px-6 py-4">
+        <header className="w-full fixed top-0 z-10 bg-black bg-opacity-80 flex justify-between items-center px-6 py-4 border border-b-white border-x-0 border-t-0">
           <div className="flex items-center gap-6 tracking-wide">
             <Link href="/">
             <div className="flex items-center gap-2">
@@ -45,17 +45,16 @@ export default function RootLayout({
               <li><Nav route="/contact" page="Contact Us"/></li>
             </ul>
           </div>
-
           <div className="flex items-center gap-2 lg:gap-4">
             <Link href="/contact">
-            <button className="px-2 py-1 md:p-2 md:px-3 bg-yellow rounded transform duration-500 hover:scale-105 hover:bg-dark_purple hover:text-white">
+            <button className="px-2 py-1 md:p-2 md:px-3 bg-yellow rounded transform duration-500 text-black hover:scale-105 hover:bg-dark_purple hover:text-white">
               Contact Us
             </button>
             </Link>
           </div>
         </header>
         {children}
-        <footer className="md:hidden w-full fixed bottom-0 bg-purple-950 opacity-80 flex justify-center items-center p-2">
+        <footer className="md:hidden w-full fixed bottom-0 bg-purple-950 flex justify-center items-center p-2">
           <Home />
           <Service />
           <Project />

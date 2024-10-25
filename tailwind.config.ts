@@ -25,7 +25,6 @@ const config: Config = {
 
       backgroundImage: {
         texture: "url('./components/bg.webp')",
-        hero: "url('./components/hero.webp')",
         residential: "url('./components/residential.webp')",
         industrial: "url('./components/industrial.webp')",
       },

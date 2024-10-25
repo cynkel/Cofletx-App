@@ -19,7 +19,7 @@ export default function FCard({
         onClick={() => drop()}
         className="transition ease-in-out border border-x-0 border-y-1 border-yellow hover:cursor-pointer md:max-h-24 p-4 flex items-center justify-between dark:border-white duration-500"
       >
-        <p className="text-sm hover:text-dark_purple md:text-lg text-black">{question}</p>
+        <p className="text-sm hover:text-dark_purple md:text-lg">{question}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
