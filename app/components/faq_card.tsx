@@ -17,9 +17,11 @@ export default function FCard({
     <div className="rounded-md">
       <div
         onClick={() => drop()}
-        className="transition ease-in-out border border-x-0 border-y-1 border-yellow hover:cursor-pointer md:max-h-24 p-4 flex items-center justify-between dark:border-white duration-500"
+        className="transition ease-in-out border border-x-0 border-y-1 border-yellow hover:cursor-pointer md:max-h-24 p-4 flex items-center justify-between duration-500 hover:bg-gray-100 hover:text-dark_purple dark:hover:bg-gray-500"
       >
-        <p className="text-sm hover:text-dark_purple md:text-lg">{question}</p>
+        <p className="text-sm md:text-lg dark:text-white">
+          {question}
+        </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -38,8 +40,7 @@ export default function FCard({
       <div
         className={clsx({
           "animate-fade_out hidden": clicked === false,
-          "animate-fade_in bg-purple-300 p-4 mt-1 dark:mt-0":
-            clicked === true,
+          "animate-fade_in bg-purple-300 p-4 mt-1 dark:mt-0": clicked === true,
         })}
       >
         <p className="text-black font-extralight">{answer}</p>

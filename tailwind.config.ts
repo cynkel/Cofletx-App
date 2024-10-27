@@ -21,6 +21,14 @@ const config: Config = {
       },
       gridTemplateRows: {
         hero: "1fr auto",
+        section: "auto auto",
+        services: "auto auto auto",
+        card: "auto auto",
+      },
+      gridTemplateColumns: {
+        section: "auto auto",
+        services: "auto auto",
+        lg: "auto auto auto",
       },
 
       backgroundImage: {
@@ -49,12 +57,13 @@ const config: Config = {
       animation: {
         fade_in: "fade_in 1s ease-in-out 1",
         fade_out: "fade_out 1s ease-in-out 1 ",
+        pageOpen: "fade_in 0.75s ease-in-out 1",
       },
       backgroundSize: {
-        down: "2px 100%"
+        down: "2px 100%",
       },
       backgroundPosition: {
-        under: "0 100%"
+        under: "0 100%",
       },
     },
   },

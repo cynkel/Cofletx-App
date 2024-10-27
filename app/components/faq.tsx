@@ -2,11 +2,14 @@ import FCard from "./faq_card";
 
 export default function FAQ() {
   return (
-    <div className="text-2xl px-3 xl:px-8 md:px-20 2xl:px-80 dark:text-white">
-      <h5 className="md:text-left text-left font-bold mb-1 text-purple-950">
+    <div className="text-2xl px-3 xl:px-8 md:px-20 2xl:px-80">
+      <h5 className="text-center font-bold mb-1 text-purple-950 dark:text-white drop-shadow-lg">
         Frequently Asked Questions
       </h5>
-      <p className="text-sm p-2">Find answers to some of the most common questions we receive about our services.</p>
+      <p className="text-sm text-center p-2 dark:text-white">
+        Find answers to some of the most common questions we receive about our
+        services.
+      </p>
       <div className="flex flex-col gap-2">
         <FCard
           question="What services does Cofletx offer?"
