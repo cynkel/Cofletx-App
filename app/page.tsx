@@ -16,7 +16,7 @@ export default function Home() {
         />
       </div>
       <Hero />
-      <section className="w-full pb-8 px-2 border-t-0 border-x-0 border-b-gray-400 border">
+      <section className="w-full px-2 border-t-0 border-x-0 border-b-gray-400 border pb-20">
         <h2 className="text-center text-3xl font-bold mb-4 text-purple-950 dark:text-white drop-shadow-lg">
           Why Choose Us?
         </h2>

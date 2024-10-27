@@ -11,22 +11,22 @@ export default function Services() {
           <Card
             title="Building Design"
             subtext="Transformative building design that harmonizes creativity and functionality, crafting sustainable solutions tailored to your vision."
-            imgSource="/building-sm.png"
+            imgSource="/building-sm.webp"
           />
           <Card
             title="Building Estimation"
             subtext="Accurate building estimation that ensures financial clarity and helps you make informed decisions for your projects"
-            imgSource="/estimate-sm.jpg"
+            imgSource="/estimate-sm.webp"
           />
           <Card
             title="Project Mgmt."
             subtext="Expert oversight guaranteeing timely delivery and seamless coordination, ensuring the success of your projects."
-            imgSource="/safety.png"
+            imgSource="/safety.webp"
           />
           <Card
             title="CAD / Plan printing"
             subtext="Precision printing services that bring your architectural designs to life with high-quality, large-format outputs."
-            imgSource="/print.jpg"
+            imgSource="/print.webp"
           />
         </div>
       </div>
