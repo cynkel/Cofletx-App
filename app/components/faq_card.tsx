@@ -1,27 +1,25 @@
-"use client";
-import { useState } from "react";
 import clsx from "clsx";
 
 export default function FCard({
   question,
   answer,
+  active,
+  focused,
 }: {
   question: string;
   answer: string;
+  active: boolean;
+  focused: ()=>void;
 }) {
-  const [clicked, setClicked] = useState(false);
-  const drop = () => {
-    setClicked((prev) => !prev);
-  };
   return (
-    <div className="rounded-md">
+    <div>
       <div
-        onClick={() => drop()}
+        onClick={() => {
+          focused();
+        }}
         className="transition ease-in-out border border-x-0 border-y-1 border-yellow hover:cursor-pointer md:max-h-24 p-4 flex items-center justify-between duration-500 hover:bg-gray-100 hover:text-dark_purple dark:hover:bg-gray-500"
       >
-        <p className="text-sm md:text-lg dark:text-white">
-          {question}
-        </p>
+        <p className="text-sm md:text-lg dark:text-white">{question}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -39,8 +37,8 @@ export default function FCard({
       </div>
       <div
         className={clsx({
-          "animate-fade_out hidden": clicked === false,
-          "animate-fade_in bg-purple-300 p-4 mt-1 dark:mt-0": clicked === true,
+          "transition-all hidden": active === false,
+          "animate-fade_in bg-purple-300 p-4 mt-1 dark:mt-0": active === true,
         })}
       >
         <p className="text-black font-extralight">{answer}</p>

@@ -1,9 +1,9 @@
-import Card from "@/app/components/card";
+import { Card } from "@/app/components/card";
 
 export default function Services() {
   return (
-    <div className="w-full h-full animate-pageOpen">
-      <div className="md:mt-24">
+    <div className="w-full animate-pageOpen mb-32 md:mt-20">
+      <div>
         <h1 className="text-center mt-6 mb-8 text-xl font-bold text-purple-950 dark:text-white md:text-2xl lg:text-3xl">
           What Services do we offer?
         </h1>
@@ -30,7 +30,6 @@ export default function Services() {
           />
         </div>
       </div>
-      <div className="pb-36"></div>
     </div>
   );
 }

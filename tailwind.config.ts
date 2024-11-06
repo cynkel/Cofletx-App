@@ -18,11 +18,12 @@ const config: Config = {
         golden_yellow: "#F1C40F",
         yellow: "#FFD700",
         dark_purple: "#4B0082",
+        unclicked: "#666666",
       },
       gridTemplateRows: {
         hero: "1fr auto",
         section: "auto auto",
-        services: "auto auto auto",
+        services: "auto auto auto auto",
         card: "auto auto",
       },
       gridTemplateColumns: {
@@ -35,6 +36,7 @@ const config: Config = {
         texture: "url('./components/bg.webp')",
         residential: "url('./components/residential.webp')",
         industrial: "url('./components/industrial.webp')",
+        textGradient: "url('./components/textGradient.jpg')",
       },
       keyframes: {
         fade_in: {
@@ -55,8 +57,8 @@ const config: Config = {
         },
       },
       animation: {
-        fade_in: "fade_in 1s ease-in-out 1",
-        fade_out: "fade_out 1s ease-in-out 1 ",
+        fade_in: "fade_in 0.5s ease-in-out 1",
+        fade_out: "fade_out 0.5s ease-in-out 1 ",
         pageOpen: "fade_in 0.75s ease-in-out 1",
       },
       backgroundSize: {
